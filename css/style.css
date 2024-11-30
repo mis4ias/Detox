@@ -37,7 +37,17 @@ a {
   bottom: 0;
   opacity: 0;
   visibility: hidden; }
-
+  
+  .site-blocks-cover {
+    background-image: url('images/hero_1.jpg');
+  }
+  
+  @media (max-width: 477px) {
+    .site-blocks-cover {
+      background-image: url('images/hero_mobile.jpg');
+    }
+  }
+  
 .offcanvas-menu .site-wrap {
   position: absolute;
   height: 100%;

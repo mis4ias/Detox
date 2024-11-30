@@ -59,20 +59,18 @@
       </div>
     </div>
 
-    <div class="site-blocks-cover" style="background-image: url('images/hero_1.jpg');">
+    <div id="hero" class="site-blocks-cover" style="background-image: url('images/hero_1.jpg');">
       <div class="container">
         <div class="row">
           <div class="col-lg-7 mx-auto order-lg-2 align-self-center">
             <div class="site-block-cover-content text-center">
-              <h2 class="sub-title">Tratamento emagrecedor,100% Eficaz</h2>
+              <h2 class="sub-title">Tratamento emagrecedor, 100% Eficaz</h2>
               <h1>DETOX ORIENTAL</h1>
-            
             </div>
           </div>
         </div>
       </div>
     </div>
-
     <div class="site-section">
       <div class="container">
         <div class="row align-items-stretch section-overlap">
@@ -249,11 +247,10 @@
             </a>
           </div>
           <div class="col-lg-6 mb-5 mb-lg-0">
-            <a href="https://wa.me/5511957715334?text=Gostaria%20de%20adquirir%20o%20tratamento" class="banner-1 h-100 d-flex" style="background-image: url('images/bg_2.jpg');">
-              <div class="banner-1-inner ml-auto  align-self-center">
-                <h2>Especialista Renomados</h2>
-                <p>Um grupo de especialistas renomados, sempre prontos para atendê-lo.
-                </p>
+            <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('images/bg_2.jpg');">
+              <div class="banner-1-inner ml-auto align-self-center">
+                <h2>Fale Agora!</h2>
+                <p>Uma equipe de especialistas renomados pronta para te atender.</p>
               </div>
             </a>
           </div>
@@ -313,7 +310,20 @@
   <script src="js/aos.js"></script>
 
   <script src="js/main.js"></script>
-
+  <script>
+    function updateBackgroundImage() {
+      const hero = document.getElementById('hero');
+      if (window.innerWidth <= 768) {
+        hero.style.backgroundImage = "url('images/hero_mobile.jpg')";
+      } else {
+        hero.style.backgroundImage = "url('images/hero_1.jpg')";
+      }
+    }
+  
+    // Executa ao carregar a página e ao redimensionar
+    window.addEventListener('load', updateBackgroundImage);
+    window.addEventListener('resize', updateBackgroundImage);
+  </script>
 </body>
 
 </html>
