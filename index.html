@@ -70,10 +70,11 @@
         </div>
       </div>
       <!-- Botão do WhatsApp -->
-<a href="https://api.whatsapp.com/send?phone=5511957715334" target="_blank" class="whatsapp-button">
-  <img src="images/whatsapp-logo.png" alt="WhatsApp" />
-</a>
-
+      <div id="whatsapp-container">
+          <a href="https://api.whatsapp.com/send?phone=5511957715334" target="_blank" class="whatsapp-button">
+            <img src="images/whatsapp-logo.png" alt="WhatsApp" />
+          </a>
+       </div>
 
     <div id="hero" class="site-blocks-cover" style="background-image: url('images/hero_1.jpg');">
       <div class="container">
@@ -345,11 +346,8 @@
     </footer>
   </div>
   
-  <script>
-  document.querySelector('.menu-toggle').addEventListener('click', function () {
-    const mobileMenu = document.querySelector('.mobile-menu');
-    mobileMenu.classList.toggle('open');
-  });</script>
+ 
+ 
   <script src="js/buttons.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>

@@ -1,0 +1,13 @@
+#hero {
+    background-image: url('images/hero_1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Certifique-se de que o hero ocupe toda a altura da tela */
+  }
+
+  @media (max-width: 768px) {
+    #hero {
+      background-image: url('images/hero_mobile.jpg');
+    }
+  }
+ 

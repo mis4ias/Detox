@@ -31,4 +31,8 @@ function showPurchaseNotification(name) {
       notification.classList.remove('show');
     }, 5000);
   }
-  
+
+  document.querySelector('.menu-toggle').addEventListener('click', function () {
+    const mobileMenu = document.querySelector('.mobile-menu');
+    mobileMenu.classList.toggle('open');
+  });

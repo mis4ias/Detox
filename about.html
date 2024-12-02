@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/buttons.css">
-
+  <link rel="stylesheet" href="css/about.css">
   <link rel="stylesheet" href="css/aos.css">
 
   <link rel="stylesheet" href="css/style.css">
@@ -42,7 +42,9 @@
         <div class="d-flex align-items-center justify-content-between">
           <!-- Logotipo -->
           <div class="logo">
-            <img src="images/Logo-Renova-Gold-branco.png" alt="Logo Renova Gold" class="logo-img">
+            <a href="index.html" >
+              <img  src="images/Logo-Renova-Gold-branco.png" alt="Logo Renova Gold" class="logo-img">
+              </a>
           </div>
           <!-- Menu de navegação -->
           <div class="main-nav d-none d-lg-block">
@@ -59,10 +61,11 @@
             ☰
           </button>
         </div>
-           <!-- Botão do WhatsApp -->
-<a href="https://api.whatsapp.com/send?phone=5511957715334" target="_blank" class="whatsapp-button">
-  <img src="images/whatsapp-logo.png" alt="WhatsApp" />
-</a>
+        <div id="whatsapp-container">
+          <a href="https://api.whatsapp.com/send?phone=5511957715334" target="_blank" class="whatsapp-button">
+            <img src="images/whatsapp-logo.png" alt="WhatsApp" />
+          </a>
+       </div>
 <!-- Popup de notificação -->
 <div class="purchase-notification ">
   <p><strong>João</strong> acabou de fazer uma compra e garantiu o brinde!🎁</p>
@@ -78,19 +81,18 @@
         </div>
       </div>
 
-    <div class="site-blocks-cover inner-page" style="background-image: url('images/hero_1.jpg');">
+    <div id="hero" class="site-blocks-cover" style="background-image: url('images/hero_1.jpg');">
       <div class="container">
         <div class="row">
-          <div class="col-lg-7 mx-auto align-self-center">
-            <div class=" text-center">
+          <div class="col-lg-7 mx-auto order-lg-2 align-self-center">
+            <div class="site-block-cover-content text-center">
               <h1>DETOX ORIENTAL</h1>
-              <p>Conheça-nos um pouco mais e saiba sobre o nosso compromisso com os nossos pacientes.</p>ˀ
+              <p >Conheça-nos um pouco mais e saiba sobre o nosso compromisso com os nossos pacientes.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-
     <div class="site-section bg-light custom-border-bottom" data-aos="fade">
       <div class="container">
         <div class="row mb-5">
@@ -249,6 +251,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/about.js"></script>
   <script src="js/buttons.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>
