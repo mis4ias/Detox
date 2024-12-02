@@ -51,14 +51,14 @@ a {
     color: #000; /* Cor preta */
   }
   .btn-saiba {
-    background-color: #49964d;
-    border-color:white;
-    color: #000; /* Cor preta */
+    background-color: #49964d !important;
+    border-color:white !important;
+    color: #000 !important;/* Cor preta */
     
   }
   .btn-saiba:hover{
-    border-color: #49964d;
-    background-color: white;
+    border-color: #49964d !important;
+    background-color: white!important;
   }
 .offcanvas-menu .site-wrap {
   position: absolute;
@@ -148,11 +148,70 @@ a {
     color: #000;
     margin-bottom: 1rem; }
 
-/* Navbar */
-.site-logo a {
-  text-transform: uppercase;
-  letter-spacing: .2em;
-  font-size: 22px;
+    .logo img {
+      max-width: 150px; /* Tamanho máximo do logotipo */
+      height: auto; /* Proporção automática */
+    }
+    
+    .site-menu {
+      display: flex;
+      gap: 20px; /* Espaço entre os itens */
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .site-menu a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+    /* Menu desktop */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Menu hamburguer no mobile */
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Esconder o menu padrão e mostrar o mobile no celular */
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: none; /* Escondido por padrão */
+    background-color: #fff;
+    padding: 20px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .mobile-menu.open {
+    display: block; /* Mostrar ao abrir */
+  }
+
+  .site-menu {
+    flex-direction: column; /* Itens empilhados */
+    gap: 15px;
+  }
+}
+
   
   font-weight: 900; }
   .site-logo a:hover {
@@ -180,14 +239,16 @@ a {
   .site-menu-toggle > span {
     top: 5px;
     position: relative; }
-
+.navBack{
+  background-color: #28b958 !important;
+}
 .site-navbar {
   margin-bottom: 0px;
   z-index: 1999;
   position: relative;
   top: 0;
   width: 100%;
-  background: #fff; }
+  background: #ffffff; }
   .site-navbar.position-relative {
     position: relative;
     background: #f9f9f9 !important; }

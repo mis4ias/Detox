@@ -27,7 +27,7 @@
   <div class="site-wrap">
 
 
-    <div class="site-navbar py-2">
+    <div class="site-navbar py-2 ">
 
       <div class="search-wrap">
         <div class="container">
@@ -40,24 +40,36 @@
 
       <div class="container">
         <div class="d-flex align-items-center justify-content-between">
+          <!-- Logotipo -->
           <div class="logo">
-            <div class="site-logo">
-              <a href="index.html" class="js-logo-clone">Detox Oriental</a>
-            </div>
+            <img src="images/Logo-Renova-Gold-branco.png" alt="Logo Renova Gold" class="logo-img">
           </div>
+          <!-- Menu de navegação -->
           <div class="main-nav d-none d-lg-block">
-            <nav class="site-navigation text-right text-md-center" role="navigation">
-              <ul class="site-menu js-clone-nav d-none d-lg-block">
+            <nav class="site-navigation" role="navigation">
+              <ul class="site-menu d-flex">
                 <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="about.html">Sobre nós</a></li>
                 <li><a href="contact.html">Contato</a></li>
               </ul>
             </nav>
           </div>
-        
+          <!-- Menu hamburguer (apenas no mobile) -->
+          <button class="menu-toggle d-lg-none">
+            ☰
+          </button>
+        </div>
+      
+        <!-- Menu mobile escondido por padrão -->
+        <div class="mobile-menu d-lg-none">
+          <ul class="site-menu">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">Sobre nós</a></li>
+            <li><a href="contact.html">Contato</a></li>
+          </ul>
         </div>
       </div>
-    </div>
+      
 
     <div id="hero" class="site-blocks-cover" style="background-image: url('images/hero_1.jpg');">
       <div class="container">
@@ -321,7 +333,13 @@
       </div>
     </footer>
   </div>
-
+  
+  <script>
+  document.querySelector('.menu-toggle').addEventListener('click', function () {
+    const mobileMenu = document.querySelector('.mobile-menu');
+    mobileMenu.classList.toggle('open');
+  });</script>
+  
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>
   <script src="js/popper.min.js"></script>
