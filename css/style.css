@@ -47,7 +47,19 @@ a {
       background-image: url('images/hero_mobile.jpg');
     }
   }
-  
+  .sobre-nos-resumo {
+    color: #000; /* Cor preta */
+  }
+  .btn-saiba {
+    background-color: #49964d;
+    border-color:white;
+    color: #000; /* Cor preta */
+    
+  }
+  .btn-saiba:hover{
+    border-color: #49964d;
+    background-color: white;
+  }
 .offcanvas-menu .site-wrap {
   position: absolute;
   height: 100%;
@@ -68,7 +80,7 @@ a {
     outline: none;
     -webkit-box-shadow: none;
     box-shadow: none; }
-  .btn.btn-primary:hover {
+  .btnar.btn-primy:hover {
     background: transparent;
     color: #51ea8c; }
   .btn.btn-black {
