@@ -1,0 +1,76 @@
+/* Botão flutuante do WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+  }
+  
+  .whatsapp-button:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Imagem dentro do botão */
+  .whatsapp-button img {
+    width: 150px; /* Ajuste a largura da imagem */
+    height: 150px; /* Ajuste a altura da imagem */
+    object-fit: cover; /* Garante que a imagem se ajuste dentro do botão */
+  }
+  
+  /* Notificação de compra */
+  .purchase-notification {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #006b2d;
+    padding: 15px 20px;
+    border: 1px solid #41b965;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    z-index: 1000;
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(50px); /* Inicialmente fora da tela */
+    transition: all 0.5s ease;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    font-size: 17px;
+  }
+  
+  /* Notificação visível */
+  .purchase-notification.show {
+    opacity: 1;
+    transform: translateY(0); /* Desliza para dentro da tela */
+  }
+  
+  /* Responsividade: Ajustar tamanho e posição em telas menores */
+  @media (max-width: 768px) {
+    .whatsapp-button {
+      top: 10px; /* Mover para o topo */
+      right: 10px; /* Manter à direita */
+      width: 80px; /* Aumentando o tamanho do botão */
+      height: 80px; /* Aumentando o tamanho do botão */
+    }
+  
+    .whatsapp-button img {
+      width: 150px; /* Aumentando a imagem para melhorar visibilidade */
+      height: 150px; /* Aumentando a imagem para melhorar visibilidade */
+    }
+  
+    .purchase-notification {
+      bottom: 10px;
+      left: 10px;
+      font-size: 13px;
+      padding: 10px 15px;
+    }
+  }
+  
